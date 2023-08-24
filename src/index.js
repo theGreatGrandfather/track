@@ -29,9 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 parse_mode: 'html',
                 text: messageToTg,
             });
+            modalForm.reset();
             console.log('Message sent to Telegram successfully.');
         } catch (error) {
             console.error('Error sending message to Telegram:', error);
         }
+       
     }
 });
