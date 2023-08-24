@@ -6,6 +6,11 @@
 }
 ._container {
 }
+.title{
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 .truckload__form {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,7 @@
 .truckload__label {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     flex-basis: calc((100% - 20px) / 2);
 }
 .textarea{
@@ -49,6 +55,17 @@
     // align-items: center;
     gap: 20px;
     flex-basis: calc((100% - 20px) / 2);
+}
+.deals-steep{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.option-title{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 ._list {
 }

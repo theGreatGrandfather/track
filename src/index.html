@@ -12,7 +12,7 @@
 <body>
   <section class='__section _section'>
     <div class='__container _container'>
-      <h2 class='-title'>QUOTE</h2>
+      <h2 class='title'>QUOTE</h2>
       <form class="truckload__form">
         <div class="truckload__container">
           <label class="truckload__label" for="first-name">
@@ -39,22 +39,6 @@
             <span class="truckload__span">Email address<span>*</span></span>
             <input id="mail" name="mail" class="truckload__field" type="text">
           </label>
-          <label class="truckload__label" for="origin">
-            <span class="truckload__span">ORIGIN: City/State/Province/Zip<span>*</span></span>
-            <input id="origin" name="origin" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="time-picup">
-            <span class="truckload__span">Time picup<span>*</span></span>
-            <input id="time-picup" name="time-picup" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="destination">
-            <span class="truckload__span">DESTINATION: City/State/Province/Zip<span>*</span></span>
-            <input id="destination" name="destination" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="time-delivery">
-            <span class="truckload__span">Time delivery<span>*</span></span>
-            <input id="time-delivery" name="time-delivery" class="truckload__field" type="text">
-          </label>
           <label class="truckload__label" for="trucks">
             <span class="truckload__span">Trucks<span>*</span></span>
             <select id="trucks" name="trucks" class="truckload__field" type="text">
@@ -70,8 +54,59 @@
             <span class="truckload__span">Payload<span>*</span></span>
             <input id="payload" name="payload" class="truckload__field" type="text">
           </label>
+          <label class="truckload__label" for="rate">
+            <span class="truckload__span">Your rate<span>*</span></span>
+            <input id="rate" name="rate" class="truckload__field" type="number">
+          </label>
+
+          <span class="truckload__label cargo">
+            <span class="deals-steep">pick up</span>
+            <label class="truckload__span">City/State/Province/Zip<span>*</span></label>
+            <input id="origin" name="origin" class="truckload__field" type="text">
+
+            <label class="truckload__span">date<span>*</span></label>
+            <input id="pick-up-date" name="pick-up-date" class="truckload__field" type="date">
+
+            <label class="truckload__span">Time <span>*</span></label>
+            <input id="time-pick-up" name="time-pick-up" class="truckload__field" type="time">
+          </span>
+          <span class="truckload__label cargo">
+            <span class="deals-steep">delivery</span>
+            <label class="truckload__span">City/State/Province/Zip<span>*</span></label>
+            <input id="origin" name="origin" class="truckload__field" type="text">
+
+            <label class="truckload__span">date<span>*</span></label>
+            <input id="date" name="date" class="truckload__field" type="date">
+
+            <label class="truckload__span">Time <span>*</span></label>
+            <input id="time-pick-up" name="time-pick-up" class="truckload__field" type="time">
+          </span>
+
+
+
+          <!-- <label class="truckload__label" for="origin">
+            <span class="truckload__span">ORIGIN: City/State/Province/Zip<span>*</span></span>
+            <input id="origin" name="origin" class="truckload__field" type="text">
+          </label>
+          <label class="truckload__label" for="time-pick-up">
+            <span class="truckload__span">Time pick up<span>*</span></span>
+            <input id="time-pick-up" name="time-pick-up" class="truckload__field" type="text">
+          </label>
+          <label class="truckload__label" for="destination">
+            <span class="truckload__span">DESTINATION: City/State/Province/Zip<span>*</span></span>
+            <input id="destination" name="destination" class="truckload__field" type="text">
+          </label> -->
+
+
+
+
+          <!-- <label class="truckload__label" for="time-delivery">
+            <span class="truckload__span">Time delivery<span>*</span></span>
+            <input id="time-delivery" name="time-delivery" class="truckload__field" type="text">
+          </label> -->
+
         </div>
-        <h3>other options</h3>
+        <h3 class="option-title">other options</h3>
         <ul class='equipment__list'>
 
           <li class='equipment__item _list'>
