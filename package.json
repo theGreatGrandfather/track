@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://theGreatGrandfather/track",
+  "homepage": "https://theGreatGrandfather/truck",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /track/"
+    "build": "parcel build src/*.html --public-url /truck/"
   },
   "repository": {
     "type": "git",
