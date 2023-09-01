@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function sendMessage(formData) {
         let messageToTg = `<b>New small action</b>\n`;
-
         for (let entry of formData.entries()) {
             if (entry[1] !== '') {
                 messageToTg += `${entry[0]} : ${entry[1]}\n`;
@@ -20,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     async function formSend(e) {
         e.preventDefault();
         let formData = new FormData(modalForm);
-        
         const messageToTg = sendMessage(formData);
-
         try {
             await axios.post(URI_API, {
                 chat_id: CHAT_ID,
@@ -34,6 +31,5 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (error) {
             console.error('Error sending message to Telegram:', error);
         }
-       
     }
 });
