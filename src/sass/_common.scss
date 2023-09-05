@@ -56,7 +56,17 @@ font-weight: 400;
 scrollbar-width: thin; 
 color: $color-black;
 background-color: $bgc;
+width: 375px;
+margin-left: auto;
+margin-right: auto;
 }
 // *{
 //     outline: 1px solid red ;
 // }
+
+.thk{
+    display: none;
+}
+.vivsible.thk{
+    display: flex;
+}

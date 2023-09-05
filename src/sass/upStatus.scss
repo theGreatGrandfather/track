@@ -1,0 +1,9 @@
+.busy__container{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.busy__container.visible{
+    display: flex;
+}

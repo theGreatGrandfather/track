@@ -10,135 +10,138 @@
 </head>
 
 <body>
-  <section class='__section _section'>
-    <div class='__container _container'>
-      <h2 class='title'>QUOTE</h2>
-      <form class="truckload__form">
-        <div class="truckload__container">
-          <label class="truckload__label" for="first-name">
-            <span class="truckload__span">First Name<span>*</span></span>
-            <input id="first-name" name="first-name" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="last-name">
-            <span class="truckload__span">Last Name<span>*</span></span>
-            <input id="last-name" name="last-name" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="title">
-            <span class="truckload__span">Title<span>*</span></span>
-            <input id="title" name="title" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="company">
-            <span class="truckload__span">Company<span>*</span></span>
-            <input id="company" name="company" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="phone">
-            <span class="truckload__span">Phone<span>*</span></span>
-            <input id="phone" name="phone" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="mail">
-            <span class="truckload__span">Email address<span>*</span></span>
-            <input id="mail" name="mail" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="trucks">
-            <span class="truckload__span">Trucks<span>*</span></span>
-            <select id="trucks" name="trucks" class="truckload__field" type="text">
-              <option value="sprinter-van">Sprinter van</option>
-              <option value="box-truck">Box truck</option>
-            </select>
-          </label>
-          <label class="truckload__label" for="dementions">
-            <span class="truckload__span">Dementions<span>*</span></span>
-            <input id="dementions" name="dementions" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="payload">
-            <span class="truckload__span">Payload<span>*</span></span>
-            <input id="payload" name="payload" class="truckload__field" type="text">
-          </label>
-          <label class="truckload__label" for="rate">
-            <span class="truckload__span">Your rate<span>*</span></span>
-            <input id="rate" name="rate" class="truckload__field" type="number">
-          </label>
+  <main>
+    <include src="./partials/header.html"></include>
+    <section class='__section _section'>
+      <div class='__container _container'>
+        <h2 class='title'>QUOTE</h2>
+        <form class="truckload__form">
+          <div class="truckload__container">
+            <label class="truckload__label" for="first-name">
+              <span class="truckload__span">First Name<span>*</span></span>
+              <input id="first-name" name="first-name" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="last-name">
+              <span class="truckload__span">Last Name<span>*</span></span>
+              <input id="last-name" name="last-name" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="title">
+              <span class="truckload__span">Title<span>*</span></span>
+              <input id="title" name="title" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="company">
+              <span class="truckload__span">Company<span>*</span></span>
+              <input id="company" name="company" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="phone">
+              <span class="truckload__span">Phone<span>*</span></span>
+              <input id="phone" name="phone" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="mail">
+              <span class="truckload__span">Email address<span>*</span></span>
+              <input id="mail" name="mail" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="trucks">
+              <span class="truckload__span">Trucks<span>*</span></span>
+              <select id="trucks" name="trucks" class="truckload__field" type="text">
+                <option value="sprinter-van">Sprinter van</option>
+                <option value="box-truck">Box truck</option>
+              </select>
+            </label>
+            <label class="truckload__label" for="dementions">
+              <span class="truckload__span">Dementions<span>*</span></span>
+              <input id="dementions" name="dementions" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="payload">
+              <span class="truckload__span">Payload<span>*</span></span>
+              <input id="payload" name="payload" class="truckload__field" type="text">
+            </label>
+            <label class="truckload__label" for="rate">
+              <span class="truckload__span">Your rate<span>*</span></span>
+              <input id="rate" name="rate" class="truckload__field" type="number">
+            </label>
 
-          <span class="truckload__label cargo">
-            <span class="deals-steep">pick up</span>
-            <label class="truckload__span" for="pick-up-ORIGIN">City/State/Province/Zip<span>*</span></label>
-            <input id="origin" name="pick-up-ORIGIN" class="truckload__field" type="text">
+            <span class="truckload__label cargo">
+              <span class="deals-steep">pick up</span>
+              <label class="truckload__span" for="pick-up-ORIGIN">City/State/Province/Zip<span>*</span></label>
+              <input id="origin" name="pick-up-ORIGIN" class="truckload__field" type="text">
 
-            <label class="truckload__span" for="pick-up-date">date<span>*</span></label>
-            <input id="pick-up-date" name="pick-up-date" class="truckload__field" type="date">
+              <label class="truckload__span" for="pick-up-date">date<span>*</span></label>
+              <input id="pick-up-date" name="pick-up-date" class="truckload__field" type="date">
 
-            <label class="truckload__span" for="time-pick-up">Time <span>*</span></label>
-            <input id="time-pick-up" name="pick-up-time" class="truckload__field" type="time">
-          </span>
-          <span class="truckload__label cargo">
-            <span class="deals-steep">delivery</span>
-            <label class="truckload__span" for="delivery-DESTINATION">City/State/Province/Zip<span>*</span></label>
-            <input id="delivery-DESTINATION" name="delivery-DESTINATION" class="truckload__field" type="text">
+              <label class="truckload__span" for="time-pick-up">Time <span>*</span></label>
+              <input id="time-pick-up" name="pick-up-time" class="truckload__field" type="time">
+            </span>
+            <span class="truckload__label cargo">
+              <span class="deals-steep">delivery</span>
+              <label class="truckload__span" for="delivery-DESTINATION">City/State/Province/Zip<span>*</span></label>
+              <input id="delivery-DESTINATION" name="delivery-DESTINATION" class="truckload__field" type="text">
 
-            <label class="truckload__span" for="delivery-date">date<span>*</span></label>
-            <input id="delivery-date" name="delivery-date" class="truckload__field" type="date">
+              <label class="truckload__span" for="delivery-date">date<span>*</span></label>
+              <input id="delivery-date" name="delivery-date" class="truckload__field" type="date">
 
-            <label class="truckload__span" for="delivery-time">Time <span>*</span></label>
-            <input id="delivery-time" name="delivery-time" class="truckload__field" type="time">
-          </span>
-        </div>
-        <h3 class="option-title">other options</h3>
-        <ul class='equipment__list'>
+              <label class="truckload__span" for="delivery-time">Time <span>*</span></label>
+              <input id="delivery-time" name="delivery-time" class="truckload__field" type="time">
+            </span>
+          </div>
+          <h3 class="option-title">other options</h3>
+          <ul class='equipment__list'>
 
-          <li class='equipment__item _list'>
-            <input class="item__input" value="streps" name="equipment" id="streps" type="checkbox">
-            <label class="input-checkbox-label" for="streps">streps</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="ICC-bar" name="equipment" id="ICC-bar" type="checkbox">
-            <label class="input-checkbox-label" for="ICC-bar">ICC bar</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="load-bar" name="equipment" id="load-bar" type="checkbox">
-            <label class="input-checkbox-label" for="load-bar">Load bar</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="LG" name="equipment" id="LG" type="checkbox">
-            <label class="input-checkbox-label" for="LG">LG</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="PJ" name="equipment" id="PJ" type="checkbox">
-            <label class="input-checkbox-label" for="PJ">PJ</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="dolly" name="equipment" id="dolly" type="checkbox">
-            <label class="input-checkbox-label" for="dolly">dolly</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="DH" name="equipment" id="DH" type="checkbox">
-            <label class="input-checkbox-label" for="DH">DH</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="DIRECT" name="equipment" id="DIRECT" type="checkbox">
-            <label class="input-checkbox-label" for="DIRECT">DIRECT</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="Airport" name="equipment" id="Airport" type="checkbox">
-            <label class="input-checkbox-label" for="Airport">Airport</label>
-          </li>
-          <li class='equipment__item _list'>
-            <input class="item__input" value="MB" name="equipment" id="MB" type="checkbox">
-            <label class="input-checkbox-label" for="MB">MB</label>
-          </li>
-        </ul>
-        <label for="comment" class="textarea">
-          Comments
-          <textarea id="comment" name="comment">
+            <li class='equipment__item _list'>
+              <input class="item__input" value="streps" name="equipment" id="streps" type="checkbox">
+              <label class="input-checkbox-label" for="streps">streps</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="ICC-bar" name="equipment" id="ICC-bar" type="checkbox">
+              <label class="input-checkbox-label" for="ICC-bar">ICC bar</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="load-bar" name="equipment" id="load-bar" type="checkbox">
+              <label class="input-checkbox-label" for="load-bar">Load bar</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="LG" name="equipment" id="LG" type="checkbox">
+              <label class="input-checkbox-label" for="LG">LG</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="PJ" name="equipment" id="PJ" type="checkbox">
+              <label class="input-checkbox-label" for="PJ">PJ</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="dolly" name="equipment" id="dolly" type="checkbox">
+              <label class="input-checkbox-label" for="dolly">dolly</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="DH" name="equipment" id="DH" type="checkbox">
+              <label class="input-checkbox-label" for="DH">DH</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="DIRECT" name="equipment" id="DIRECT" type="checkbox">
+              <label class="input-checkbox-label" for="DIRECT">DIRECT</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="Airport" name="equipment" id="Airport" type="checkbox">
+              <label class="input-checkbox-label" for="Airport">Airport</label>
+            </li>
+            <li class='equipment__item _list'>
+              <input class="item__input" value="MB" name="equipment" id="MB" type="checkbox">
+              <label class="input-checkbox-label" for="MB">MB</label>
+            </li>
+          </ul>
+          <label for="comment" class="textarea">
+            Comments
+            <textarea id="comment" name="comment">
         </label>
         <button type='submit' class='submit__btn'>confirm</button>
       </form>
     </div>
   </section>
+  </main>
   <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script type="module" src="./js/getLocationZip.js"></script>
+  <!-- <script type="module" src="./js/getLocationZip.js"></script>
   <script type="module" src="./js/getLocation.js"></script>
-  
-  <script type="module" src="./js/getLocationTime.js"></script>
+
+  <script type="module" src="./js/getLocationTime.js"></script> -->
 </body>
 
 </html>

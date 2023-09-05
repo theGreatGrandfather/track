@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updating status</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+</head>
+
+<body>
+    <include src="./partials/header.html"></include>
+    <main>
+        <form class="upForm" style="display: flex; flex-direction: column; width: 350px; gap: 20px;">
+            <h2 class='-title'>please, update your status</h2>
+            <label for="available">
+                <input class="statusRadio" value="available" type="radio" name="status" id="available">
+                I`m available
+            </label>
+
+            <label for="busy">
+                <input class="statusRadio" value="busy" type="radio" name="status" id="busy">
+                I`m busy
+            </label>
+            <!-- ========================== -->
+            <div class="busy__container">
+                when you will become available?
+                <input class="date busyData" type="date" name="date" id="date">
+                <input class="time busyData" type="time" name="time" id="time">
+                what will be your location at this time?
+                <input class="number busyData" type="number" name="location" id="location">
+
+            </div>
+            <button class="submitBtn" type="submit" disabled>submit</button>
+        </form>
+    </main>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/upDriver.js"></script>
+
+</body>
+
+</html>
